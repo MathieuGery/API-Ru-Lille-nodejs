@@ -3,6 +3,7 @@
 const express = require('express')
 const router = express.Router()
 const authController = require('../../controllers/auth.controller')
+const ruController = require('../../controllers/ru.controller')
 const validator = require('express-validation')
 const { create } = require('../../validations/user.validation')
 const auth = require('../../middlewares/authorization')
@@ -12,10 +13,8 @@ router.post('/login', authController.login) // login
 router.get('/confirm', authController.confirm)
 
 // Authentication example
-router.get('/secret1', auth(), (req, res) => {
-  // example route for auth
-  res.json({ message: 'Anyone can access(only authorized)' })
-})
+router.get('/meal', auth(), ruController.meal)
+
 router.get('/secret2', auth(['admin']), (req, res) => {
   // example route for auth
   res.json({ message: 'Only admin can access' })

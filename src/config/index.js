@@ -1,13 +1,13 @@
-require('dotenv').config() // load .env file
+ require('dotenv').config() // load .env file
 
 module.exports = {
-  port: 5500,
-  app: 'Ru-API',
+  port: process.env.PORT,
+  app: process.env.APP,
   env: process.env.NODE_ENV,
-  secret: 'epitech42ruapi',
-  hostname: 'localhost',
+  secret: process.env.APP_SECRET,
+  hostname: process.env.HOSTNAME,
   mongo: {
-    uri: 'mongodb+srv://pingu:iqQ5E7Vd4@cluster-api-ru-hxkst.gcp.mongodb.net/test?retryWrites=true&w=majority',
+    uri: process.env.MONGOURI,
     testURI: process.env.MONGOTESTURI
   },
   transporter: {
