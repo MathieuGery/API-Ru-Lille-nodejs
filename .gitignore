@@ -61,4 +61,4 @@ typings/
 .next
 
 # skip my credentials
-config/index.js
+src/config/index.js
