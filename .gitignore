@@ -59,6 +59,3 @@ typings/
 
 # next.js build output
 .next
-
-# skip my credentials
-src/config/index.js
