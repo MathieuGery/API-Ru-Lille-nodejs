@@ -1,0 +1,21 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "web scrapper for crous lille to get meal",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node src/scraper.js",
+    "dev": "nodemon src/scraper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mathieu Gery",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
