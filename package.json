@@ -27,6 +27,7 @@
     "nodemon": "^1.19.4"
   },
   "dependencies": {
+    "mquery": ">=3.2.3",
     "glob-parent": ">=5.1.2",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.5.1",
