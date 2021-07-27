@@ -13,6 +13,7 @@
   "author": "Kasun Vithanage",
   "license": "MIT",
   "devDependencies": {
+    "minimist": ">=0.2.1",
     "chai": "^4.1.2",
     "chai-http": "^4.3.0",
     "cross-env": "^5.1.3",
